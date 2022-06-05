@@ -46,7 +46,6 @@ html, body {
   color: black;
   cursor: pointer;
   background: #04e085;
-  border: 1px solid #04e085;
 }
 
 /* hamburgur :) */ 
@@ -290,7 +289,7 @@ a:hover {
 
 
 .button {
-  padding: 2%;
+  padding: 1% 2% 1% 2%;
   color: white;
   font-size: 1rem;
   background: #02d17c;
@@ -323,3 +322,4 @@ a:hover {
 .footer a {
   color: #FFF;
 }
+
