@@ -1,0 +1,325 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #f2f7f5;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.dark-mode {
+  height: 100%;
+  width: 100%;
+  font-size: 1.5rem;
+  background: #353840;
+  text-align: center;
+  font-family: 'Didact Gothic', sans-serif;
+}
+
+.menuBar {
+  background-color: #00bf70;
+  opacity: 1;
+  overflow: hidden;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+
+.menuBar a {
+  font-family: 'Didact Gothic', sans-serif;
+  float: left;
+  display: block;
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding-left: 2%;
+  padding-right: 2.5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: auto;
+}
+
+.menuBar a:hover {
+  color: black;
+  cursor: pointer;
+  background: #04e085;
+  border: 1px solid #04e085;
+}
+
+/* hamburgur :) */ 
+.menuBar .icon {
+  display: none;
+  width: 15%;
+  height: 9%;
+}
+@media screen and (max-width: 600px) {
+  .menuBar a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .menuBar a.icon {
+    float: right;
+    display: block;
+  }
+  .menuBar a:hover {transform: none;}
+}
+@media screen and (max-width: 600px) {
+  .menuBar.responsive {position: relative;}
+  .menuBar.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 14%;
+  }
+  .menuBar.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .menuBar.responsive .dropdown {float: none;}
+  .menuBar.responsive .dropdown-content {position: relative;}
+  .menuBar.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+
+
+
+/* Banner Styling */
+.banner{
+  text-align: center;
+}
+
+.title{
+  font-size: 4rem;
+  font-family: 'Righteous', cursive;
+    padding: 0px 10% 2% 10%;
+    text-shadow: 0px 2px 2px white;
+    color: #02b56b;
+}
+
+.smalltext{
+  font-size: 1rem;
+  line-height: 1.2;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 5%;
+  padding-right: 5%;
+  font-family: 'Didact Gothic', sans-serif;
+  color: black;
+}
+
+.h2{
+  padding: 1.5%;
+}
+.h4{
+  padding: 1.5%;
+}
+
+.mainpagetext:link{
+  text-decoration: none!important;
+  color: blue;
+}
+
+
+
+/* DiscordToggle Styling */
+.hidden {
+  display: none;
+  transition: 1s;
+}
+
+.sidebar {
+  flex: 1;
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sidebar h2 {
+  max-width: 100%;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content {
+  display: block;
+  min-height: 100vh;
+  animation: fadein 2s; 
+  -moz-animation: fadein 2s; /* Firefox */
+  -webkit-animation: fadein 2s; /* Safari and Chrome */
+  -o-animation: fadein 2s; /* Opera */
+} 
+
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+  .sidebar {
+    width: 100%;
+  }
+}
+
+.page-content {
+  align-items: center;
+  justify-content: center;
+}
+
+.page-content h5 {
+  padding-bottom: 20vh;
+}
+
+.hidden {
+  display: none;
+  transition: 1s;
+}
+
+.discordToggle:hover {
+  cursor: pointer;
+}
+
+a {
+  color: #023d1c;
+  text-decoration: underline;
+  transition: 0.3s;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.heart {
+  transition: transform 0.5s ease; 
+  text-decoration: none;
+  display: inline-block;
+}
+.heart:hover {
+  transform: scale(1.5, 1.5);
+  cursor: pointer;
+}
+
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  display: flex;
+  padding-bottom: 10vh;
+}
+
+/* Create two equal columns that sits next to each other */
+.column {
+  flex: 50%;
+}
+
+.column h2{
+  font-size: 1.5 rem;
+  font-family: 'Didact Gothic', sans-serif;
+  padding: 2%;
+}
+.column h3{
+  font-family: 'Didact Gothic', sans-serif;
+}
+.column p{
+  font-size: 1rem;
+  font-family: 'Didact Gothic', sans-serif;
+  padding-left: 12%;
+  padding-right: 12%;
+  padding-top: 2%;
+  padding-bottom: 2%; 
+}
+
+.column img{
+  width: 10rem;
+}
+
+
+
+
+.button {
+  padding: 2%;
+  color: white;
+  font-size: 1rem;
+  background: #02d17c;
+  border: none;
+  transition: 0.3s;
+  box-shadow: 5px 5px #02bd70;
+}
+
+.button:hover {
+  background: #02bd70;
+  transform: scale(1.1);
+  box-shadow: 8px 8px #02d17c;
+  cursor: pointer;
+}
+
+
+/* FOOTER STUFF */
+.footer {
+  bottom: 0;
+  text-align: center;
+  background: #02a662;
+  width: 100%;
+  padding: 1rem;
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-family: 'Didact Gothic', sans-serif;
+  color: white;
+}
+
+.footer a {
+  color: #FFF;
+}
